@@ -8,7 +8,7 @@ app.use(express.json());
 app.get("/read", (req, res) => {
     const { filename } = req.query;
     fs.readFile(filename, 'utf8', ( data) => {
-        res.json({ data });
+        console.log("reading file");
     });
 })
 app.post('/create', (req, res) => {
