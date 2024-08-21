@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post('/calculator/add', (req, res) => {
+app.post('/add', (req, res) => {
     const { n1, n2 } = req.body;
 
     if (n1 === NUll) {
